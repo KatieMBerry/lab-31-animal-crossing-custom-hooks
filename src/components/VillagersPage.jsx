@@ -1,8 +1,8 @@
-import React from 'react';
+// import React from 'react';
 
-const VillagerPage = () => (
+// const VillagerPage = () => (
 
 
-);
+// );
 
-export default VillagerPage;
+// export default VillagerPage;
