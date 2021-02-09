@@ -5,7 +5,8 @@ import {
   Switch
 } from 'react-router-dom';
 import Header from '../Header';
-import VillagersPage from '../VillagersPage';
+import VillagersPage from '../../containers/VillagersPage';
+import VillagerById from '../../containers/VillagerById';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Header />
       <Switch>
         <Route exact path='/' component={VillagersPage} />
+        <Route exact path='/villagers/:id' component={VillagerById} />
       </Switch>
     </Router>
   );
