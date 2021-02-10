@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { getVillagerById, getVillagers, getVillagersById } from '../services/getVillagers';
+import { getVillagerById, getVillagers } from '../services/getVillagers';
 
 export const useVillagers = () => {
-    [loading, setLoading] = useState(false);
+    [loading, setLoading] = useState(true);
     const [villagers, setVillagers] = useState([]);
 
     useEffect(() => {
@@ -20,7 +20,7 @@ export const useVillagers = () => {
 };
 
 export const useVillagerById = _id => {
-    [loading, setLoading] = useState(false);
+    [loading, setLoading] = useState(true);
     const [villager, setVillager] = useState([]);
 
     useEffect(() => {
