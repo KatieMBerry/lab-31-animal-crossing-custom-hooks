@@ -4,7 +4,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import Header from '../Header';
+import Header from '../../components/headers/Header';
 import VillagersPage from '../../containers/VillagersPage';
 import VillagerById from '../../containers/VillagerById';
 
