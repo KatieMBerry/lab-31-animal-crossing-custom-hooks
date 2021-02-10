@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const VillagerDetail = ({ image, name, quote, skill }) => (
-    <figure>
+    <figure >
         <img src={image} alt={name} />
         <figcaption>
             <p>{name}</p>

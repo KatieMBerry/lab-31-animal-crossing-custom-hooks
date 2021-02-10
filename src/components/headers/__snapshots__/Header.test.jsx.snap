@@ -16,7 +16,7 @@ exports[`Header component renders Header 1`] = `
       </li>
       <li>
         <a
-          href="/villagers/:id"
+          href="/villagers/:_id"
         >
           Villager Deets
         </a>

@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
+// import { useParams } from 'react-router-dom';
 import { getVillagerById, getVillagers } from '../services/getVillagers';
 
 export const useVillagers = () => {
-    [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true);
     const [villagers, setVillagers] = useState([]);
 
     useEffect(() => {
@@ -20,8 +21,9 @@ export const useVillagers = () => {
 };
 
 export const useVillagerById = _id => {
-    [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true);
     const [villager, setVillager] = useState([]);
+    // const { _id } = useParams();
 
     useEffect(() => {
         getVillagerById(_id)

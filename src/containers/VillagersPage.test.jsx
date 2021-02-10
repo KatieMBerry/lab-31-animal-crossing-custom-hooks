@@ -2,13 +2,13 @@ import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
-import villagerApiResponse from '../fixtures/villagerApi.json';
+import villagerApi from '../fixtures/villagerApi.json';
 import { MemoryRouter } from 'react-router-dom';
 import VillagersPage from './VillagersPage';
 
 const server = setupServer(
     rest.get('https://ac-vill.herokuapp.com/villagers', (req, res, ctx) => {
-        return res(ctx.json(villagerApiResponse));
+        return res(ctx.json(villagerApi));
     })
 );
 
@@ -23,7 +23,7 @@ describe('VillagersPage container', () => {
             </MemoryRouter>
         );
 
-        screen.getByAltText('loading');
+        screen.getByText('Loading');
 
         const listOfVillagers = await screen.findByTestId('villagers');
 

@@ -5,5 +5,5 @@ export const getVillagers = () => {
 
 export const getVillagerById = (_id) => {
     return fetch(`https://ac-vill.herokuapp.com/villagers/${_id}`)
-        .then(res => res.json);
+        .then(res => res.json());
 } 

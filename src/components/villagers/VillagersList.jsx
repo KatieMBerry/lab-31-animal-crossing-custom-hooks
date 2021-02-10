@@ -22,7 +22,7 @@ const VillagersList = ({ villagers }) => {
 VillagersList.propTypes = {
     villagers: PropTypes.arrayOf(
         PropTypes.shape({
-            _id: PropTypes.number.isRequired,
+            _id: PropTypes.string.isRequired,
             name: PropTypes.string.isRequired,
             image: PropTypes.string.isRequired
         }).isRequired
