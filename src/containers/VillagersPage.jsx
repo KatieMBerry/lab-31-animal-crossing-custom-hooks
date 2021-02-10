@@ -1,6 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { Component, useState, useEffect } from 'react';
+// import Header from '../components/headers/Header'
+import VillagerList from '../components/villagers/VillagersList';
+import { getVillagers } from '../services/getVillagers';
 
-const VillagerPage = () => {
+
+const VillagersPage = () => {
     const [loading, setLoading] = useState(false);
     const [villagers, setVillagers] = useState([]);
 
@@ -17,4 +21,4 @@ const VillagerPage = () => {
         villagers={villagers} />
 }
 
-export default VillagerPage;
+export default VillagersPage;

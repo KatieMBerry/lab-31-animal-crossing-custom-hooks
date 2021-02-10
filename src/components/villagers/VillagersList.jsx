@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Villager from './Villager';
 import { Link } from 'react-router-dom';
 
-const VillagerList = ({ villagers }) => {
+const VillagersList = ({ villagers }) => {
     const villagerElements = villagers.map(villager => (
         <li key={villager._id}>
             <Link to={`/villagers/${villager._id}`} >
@@ -18,7 +19,7 @@ const VillagerList = ({ villagers }) => {
     </ul>
 }
 
-VillagerList.propTypes = {
+VillagersList.propTypes = {
     villagers: PropTypes.arrayOf(
         PropTypes.shape({
             _id: PropTypes.number.isRequired,
@@ -28,4 +29,4 @@ VillagerList.propTypes = {
     ).isRequired
 }
 
-export default VillagerList;
+export default VillagersList;
