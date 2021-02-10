@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import VillagerList from './Villagers.List';
+import VillagerList from './VillagersList';
 
 describe('VillagerList component', () => {
     afterEach(() => cleanup());

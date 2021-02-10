@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import styles from './Villager.css';
 
 const Villager = ({ image, name }) => (
     <figure data-testid="villager"

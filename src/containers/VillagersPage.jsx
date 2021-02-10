@@ -1,20 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import VillagerList from '../components/villagers/VillagersList';
+import { useVillagers } from '../hooks/characters.js';
 
-const VillagerPage = () => {
-    const [loading, setLoading] = useState(false);
-    const [villagers, setVillagers] = useState([]);
-
-    useEffect(() => {
-        getVillagers()
-            .then(villagers => {
-                setVillagers(villagers);
-                setLoading(false);
-            });
-    }, []);
+const VillagersPage = () => {
+    const { loading, villagers } = useVillagers();
 
     if (loading) return <h1>Loading</h1>;
     return <VillagerList
         villagers={villagers} />
 }
 
-export default VillagerPage;
+export default VillagersPage;

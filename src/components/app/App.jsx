@@ -13,8 +13,8 @@ export default function App() {
     <Router>
       <Header />
       <Switch>
-        <Route exact path='/' component={VillagersPage} />
-        <Route exact path='/villagers/:id' component={VillagerById} />
+        <Route exact path="/" component={VillagersPage} />
+        <Route exact path="/villagers/:_id" component={VillagerById} />
       </Switch>
     </Router>
   );

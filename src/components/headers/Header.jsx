@@ -9,7 +9,7 @@ const Header = () => (
                 <Link to="/">Villager Home</Link>
             </li>
             <li>
-                <Link to="/villagers/:id">Villager Deets</Link>
+                <Link to="/villagers/:_id">Villager Deets</Link>
             </li>
         </ul>
     </div>
