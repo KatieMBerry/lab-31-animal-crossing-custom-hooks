@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-// import { useParams } from 'react-router-dom';
 import { getVillagerById, getVillagers } from '../services/getVillagers';
+import { useToggle } from './theme';
 
 export const useVillagers = () => {
     const [loading, setLoading] = useState(true);
@@ -23,7 +23,7 @@ export const useVillagers = () => {
 export const useVillagerById = _id => {
     const [loading, setLoading] = useState(true);
     const [villager, setVillager] = useState([]);
-    // const { _id } = useParams();
+    // const toggleOn = useToggle();
 
     useEffect(() => {
         getVillagerById(_id)

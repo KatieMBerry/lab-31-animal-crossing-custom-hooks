@@ -1,0 +1,18 @@
+.Header {
+    width: 100%;
+    color: teal
+}
+
+.light {
+    background-color: white;
+}
+
+.dark {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    color: teal;
+}

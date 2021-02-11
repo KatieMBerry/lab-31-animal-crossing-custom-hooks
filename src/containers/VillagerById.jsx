@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useVillagerById } from '../hooks/characters.js';
+import { useVillagerById } from '../state/characters.js';
 import VillagerDetail from '../components/details/VillagerDetail';
 
 const VillagerById = ({ match }) => {

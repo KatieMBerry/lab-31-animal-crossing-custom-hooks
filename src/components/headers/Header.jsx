@@ -1,9 +1,20 @@
 import React from 'react';
+import { ThematicContext, ThemeProvider, useContext, useToggle } from '../../state/theme';
 import { Link } from 'react-router-dom';
+import styles from './Header.css';
 
-const Header = () => (
-    <div className="header">
-        Welcome to Animal Crossing Api!  Pick Your Villager!
+const Header = () => {
+    // const { theme } = useContext(ThematicContext);
+    const toggle = useToggle();
+    // const toggle = 'dark';
+
+    return <div className={`${styles.Header} ${styles[toggle]}`}>
+        <h1>Welcome to Animal Crossing Api!  Pick Your Villager!</h1>
+        <label>Choose a Mode:</label>
+        <select name="toggle" id="toggle">
+            <option value="light">LightMode</option>
+            <option value="dark">DarkMode</option>
+        </select>
         <ul>
             <li>
                 <Link to="/">Villager Home</Link>
@@ -14,6 +25,6 @@ const Header = () => (
         </ul>
     </div>
 
-);
+};
 
 export default Header;
