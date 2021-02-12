@@ -1,0 +1,11 @@
+.VillagerList {
+    display: flexbox;
+    flex-wrap: wrap;
+  }
+
+  img {
+      width: 5rem;
+      height: 7rem;
+  }
+  
+  

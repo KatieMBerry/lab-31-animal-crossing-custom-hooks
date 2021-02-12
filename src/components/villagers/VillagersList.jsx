@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import styles from './VillagerList.css';
 // import { ThematicContext, ThemeProvider } from '../../state/theme';
 import PropTypes from 'prop-types';
 import Villager from './Villager';
@@ -16,7 +17,8 @@ const VillagersList = ({ villagers }) => {
         </li >
     ));
 
-    return <ul data-testid="villagers">
+    return <ul className={`${styles.VillagerList}`}
+        data-testid="villagers">
         {villagerElements}
     </ul>
 }

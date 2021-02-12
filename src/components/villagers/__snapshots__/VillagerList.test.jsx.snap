@@ -3,6 +3,7 @@
 exports[`VillagerList component renders VillagerList 1`] = `
 <DocumentFragment>
   <ul
+    class="VillagerList"
     data-testid="villagers"
   />
 </DocumentFragment>

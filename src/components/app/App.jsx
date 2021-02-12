@@ -19,7 +19,6 @@ export default function App() {
         <Route exact path="/" component={VillagersPage} />
         <Route exact path="/villagers/:_id" component={VillagerById} />
       </Switch>
-
     </Router>
   );
 }
