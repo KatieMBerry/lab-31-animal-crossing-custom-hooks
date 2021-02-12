@@ -1,0 +1,23 @@
+.Header {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    color: teal;
+}
+
+ul {
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color: teal;
+}
+
+a {
+    color: teal;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}

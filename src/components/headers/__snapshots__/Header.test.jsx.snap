@@ -3,22 +3,20 @@
 exports[`Header component renders Header 1`] = `
 <DocumentFragment>
   <div
-    class="header"
+    class="Header"
   >
-    Welcome to Animal Crossing Api!  Pick Your Villager!
+    <h1>
+      Welcome to Animal Crossing Api!  Pick Your Villager!
+    </h1>
+    <button>
+      ✨Toggle Mode✨
+    </button>
     <ul>
       <li>
         <a
           href="/"
         >
           Villager Home
-        </a>
-      </li>
-      <li>
-        <a
-          href="/villagers/:_id"
-        >
-          Villager Deets
         </a>
       </li>
     </ul>
